@@ -140,6 +140,7 @@ const searchbutton = document.querySelector('#btnPostcode')
 const input = document.querySelector('#txtPostcode')
 
 searchbutton.addEventListener('click', () => {
+    results.innerHTML = ""
     var input = $('#txtPostcode').val();
     var url  = "https://api.postcodes.io/postcodes/"+input;
   
